@@ -24,7 +24,8 @@ while go_again == True:
         for name in bidding_list:
             if bidding_list[name] > highest_bid:
                 highest_bid = bidding_list[name]
-        print(f"{name} has the highest bid of ${highest_bid}")
+                bidder_name = name
+        print(f"{bidder_name} has the highest bid of ${highest_bid}")
     else:
         go_again = True
         clear()
